@@ -32,7 +32,7 @@ $(MODEM_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Modem symlink: $@"
 	@mkdir -p $(dir $@)
 	@rm -rf $@
-	$(hide) ln -sf /system/blobs/D6603/$(notdir $@) $@
+	$(hide) ln -sf /system/etc/blobs/D6603/$(notdir $@) $@
 
 ALL_DEFAULT_INSTALLED_MODULES += $(MODEM_SYMLINKS)
 
